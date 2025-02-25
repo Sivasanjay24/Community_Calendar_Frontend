@@ -1,0 +1,132 @@
+
+.navbar {
+  padding: 16px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 16px;
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #d9d9d9;
+}
+
+/* Event Card */
+.event-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.event-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.event-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.event-card a:hover {
+  text-decoration: underline;
+}
+
+/* Event Details */
+.event-details {
+  padding: 24px;
+}
+.event-details h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.event-details button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Event Form */
+.event-form {
+  padding: 24px;
+}
+.event-form input, .event-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.event-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Search and Filters */
+.search-filters {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+}
+.search-filters input, .search-filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-filters button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+/* Dashboards */
+.dashboard {
+  padding: 24px;
+}
+.dashboard h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Calendar */
+.calendar-view {
+  padding: 24px;
+}
+
+/* Map */
+.event-map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Notification Bell */
+.notification-bell {
+  position: relative;
+}
+.notification-bell span {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #dc3545;
+  color: rgb(209, 18, 18);
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
