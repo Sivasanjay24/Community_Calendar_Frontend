@@ -1,0 +1,29 @@
+.navbar {
+  height: 80px;
+    background-color: #0c172f;
+    -webkit-transition: all 0.1sease-in-out;
+    transition: all 0.1sease-in-out;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 120
+}
+.navcon {
+  margin-left: 16px;
+  color: white;
+  text-decoration: none;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.con{
+padding-inline: 50px;
+}
+.navbar a:hover {
+  color: #d9d9d9;
+}
+.navbar h1
+{
+color:#ffffff
+}
