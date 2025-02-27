@@ -4,7 +4,7 @@ import React from 'react'
 function home() {
   return (
     <div>
-      <Search/>
+<h1>Home Page</h1>
     </div>
   )
 }

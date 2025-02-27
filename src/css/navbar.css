@@ -1,21 +1,23 @@
 .navbar {
   height: 80px;
     background-color: #0c172f;
-    -webkit-transition: all 0.1sease-in-out;
-    transition: all 0.1sease-in-out;
+    transition: all 1s ease-in-out;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 120
+    z-index: 120;
+    margin: 0;
+    padding: 0;
+    position:relative;
 }
 .navcon {
   margin-left: 16px;
   color: white;
   text-decoration: none;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .con{
 padding-inline: 50px;
@@ -27,3 +29,14 @@ padding-inline: 50px;
 {
 color:#ffffff
 }
+.navbar button
+{
+  color: #000000;
+  
+    background: white;
+    text-align: center;
+    padding-left:  15px;
+    border-radius: 100px;
+    outline: none;
+  }
+  

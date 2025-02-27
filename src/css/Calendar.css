@@ -1,0 +1,80 @@
+/* Calendar container */
+.calendar-container {
+  font-family: 'Arial, sans-serif';
+  max-width: 600px; /* Further reduce the maximum width */
+  margin: 0 auto;
+  padding: 5px; /* Minimal padding */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar title */
+.calendar-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 5px; /* Minimal margin */
+  font-size: 1.2rem; /* Smaller font size */
+}
+
+
+/* FullCalendar overrides */
+.fc {
+  font-size: 10px; /* Very small font size for the entire calendar */
+}
+
+.fc-header-toolbar {
+  margin-bottom: 5px; /* Minimal margin */
+  padding: 2px; /* Minimal padding */
+}
+
+.fc-header-toolbar button {
+  padding: 2px 4px; /* Minimal button padding */
+  font-size: 10px; /* Very small button font size */
+}
+
+.fc-daygrid-day {
+  padding: 1px; /* Minimal cell padding */
+}
+
+.fc-daygrid-day-number {
+  font-size: 10px; /* Very small date number font size */
+  padding: 1px; /* Minimal padding */
+}
+
+.fc-col-header-cell {
+  padding: 2px; /* Minimal header padding */
+  font-size: 10px; /* Very small header font size */
+}
+
+.fc-event {
+  font-size: 8px; /* Very small event font size */
+  padding: 1px; /* Minimal event padding */
+  margin: 1px; /* Minimal event margin */
+}
+
+/* Remove unnecessary borders and shadows */
+.fc-daygrid-day-frame {
+  border: none;
+}
+
+.fc-daygrid-day-top {
+  justify-content: center; /* Center the date number */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calendar-container {
+    max-width: 100%; /* Allow full width on small screens */
+    padding: 2px; /* Minimal padding */
+  }
+
+  .fc-header-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fc-header-toolbar button {
+    margin-top: 2px; /* Minimal button margin */
+  }
+}

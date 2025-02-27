@@ -1,0 +1,24 @@
+.search-filters {
+  display: flex;
+  position:absolute;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 100px;
+  margin: left 100px;
+  background-color: #ccc;
+  gap: 8px;
+  padding: 16px;
+  transition: 1s ease-in;
+}
+.search-filters input, .search-filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-filters button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}

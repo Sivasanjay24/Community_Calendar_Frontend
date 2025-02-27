@@ -1,16 +1,23 @@
+import { useState } from 'react';
 import '../css/navbar.css'
-import Calendar from 'fullcalendar'
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-  var calendar = new Calendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth'
-  });
-  calendar.render();
-});
-
+import Search from './search'
+import Home from './home'
 const Navbar = () => {
+  var [dd,showdd] =useState(false)
   return (
-    <div id = "calendar"></div>
+    <div>
+    <div className='navbar'>
+      <h1>Community Calendar</h1>
+    <div className="navcon">Home</div>
+    <div onClick={()=>showdd(!dd)} className="navcon">search🔎</div>
+    <div className="navcon" id="eve">Events</div>
+    <div className="navcon">My events</div>
+    <div className="navcon">Profile</div>
+    {dd && <Search/>}
+    </div>
+   
+    </div>
+    
   );
 };
 
