@@ -38,7 +38,7 @@ function App() {
         initialView="dayGridMonth" 
         events={events}
         dateClick={handleDateClick}
-        eventClick={handleEventClick}
+        // eventClick={handleEventClick}
         editable={true} 
         selectable={true}
       />
