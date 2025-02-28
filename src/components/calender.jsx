@@ -4,7 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import '../css/Calendar.css'
 
-function App() {
+function cal() {
   const [events, setEvents] = useState([
     { id: 1, title: 'Community Meeting', date: '2024-10-15' },
     { id: 2, title: 'Local Concert', date: '2024-10-20' },
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default cal;

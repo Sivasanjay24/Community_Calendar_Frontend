@@ -1,0 +1,55 @@
+.eform {
+  max-width: 400px;
+  margin:  0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eform input[type="text"],
+.eform input[type="date"],
+.eform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.eform textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.eform button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.eform button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.eform input[type="text"]:focus,
+.eform input[type="date"]:focus,
+.eform textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.eform h1{
+  text-align: center;
+  
+}

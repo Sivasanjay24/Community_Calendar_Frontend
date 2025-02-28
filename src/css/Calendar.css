@@ -4,6 +4,8 @@
   max-width: 600px; /* Further reduce the maximum width */
   margin: 0 auto;
   padding: 5px; /* Minimal padding */
+  margin-top: 10px;
+  margin-bottom: 90px;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
