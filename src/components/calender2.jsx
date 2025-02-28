@@ -6,13 +6,6 @@ import EventForm from './eventsubmission';
 import '../css/Calendar.css'
 
   const CalendarPage = () => {
-    // State to store events
-    const [events, setEvents] = useState([]);
-  
-    // Function to handle form submission
-    const handleAddEvent = (newEvent) => {
-      setEvents([...events, newEvent]); 
-    };
   
 
   return (
@@ -20,7 +13,7 @@ import '../css/Calendar.css'
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
-          events={events}
+          // git 
           selectable={true}
         />
       </div>
