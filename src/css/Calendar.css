@@ -80,3 +80,7 @@
     margin-top: 2px; /* Minimal button margin */
   }
 }
+.inv
+{
+  display:none;
+}

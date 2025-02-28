@@ -7,7 +7,7 @@ const EventForm = () => {
       <h1 className="hp">Events</h1>
       <div className="grid">
         <div class="card">
-          <img className="imgp" src="/conc.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/music.png" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b>Concert</b>
@@ -19,7 +19,7 @@ const EventForm = () => {
           </div>
         </div>
         <div class="card">
-          <img className="imgp" src="/fm..jpg" alt="Avatar"></img>
+          <img className="imgp" src="/market.jpg" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b> Big Fish Market</b>
@@ -30,7 +30,7 @@ const EventForm = () => {
           </div>
         </div>
         <div class="card">
-          <img className="imgp" src="/temp1.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/festival.jpg" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b>Yearly village festival</b>
@@ -41,16 +41,16 @@ const EventForm = () => {
           </div>
         </div>
         <div class="card">
-          <img className="imgp" src="/dcon.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/music.png" alt="Avatar"></img>
           <div class="container">
             <h4>
-              <b>Concert</b>
+              <b> Dance Concert</b>
             </h4>
             <p className="des">Dance concert and competition by prabudeva</p>
           </div>
         </div>
         <div class="card">
-          <img className="imgp" src="/temp2.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/festival.jpg" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b>Yearly village festival</b>
@@ -61,7 +61,7 @@ const EventForm = () => {
           </div>
         </div>
         <div class="card">
-          <img className="imgp" src="/camp.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/meeting.jpg" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b>Campaign</b>
