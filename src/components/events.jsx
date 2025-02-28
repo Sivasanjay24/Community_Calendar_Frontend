@@ -7,7 +7,7 @@ const EventForm = () => {
       <h1 className="hp">Events</h1>
       <div className="grid">
         <div class="card">
-          <img className="imgp" src="/con.jpg" alt="Avatar"></img>
+          <img className="imgp" src="/conc.jpg" alt="Avatar"></img>
           <div class="container">
             <h4>
               <b>Concert</b>
