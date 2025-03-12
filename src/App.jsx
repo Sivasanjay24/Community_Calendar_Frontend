@@ -14,7 +14,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/events' element={<Events/>}/>
+      {/* <Route path='/events' element={<Events/>}/> */}
       <Route path='/eventsub' element={<EventSub/>}/>
     </Routes>
     {/* <Footer/> */}
