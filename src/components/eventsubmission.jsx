@@ -5,7 +5,7 @@ const EventForm = () => {
   const [Title,setT]=useState("")
   const [Date,setD]=useState("")
   const [Description,setDesc]=useState("")
-  // const [Category,setP]=useState("")
+  const [Category,setP]=useState("")
   const handledetails = (event)=>
   {
     event.preventDefault();  
@@ -13,7 +13,7 @@ const EventForm = () => {
       Title:Title,
       Date:Date,
       Description:Description,
-      // Category:Category
+      Category:Category
   }).then(response=>{
     console.log(response.data);
     if(response.data.isStored)
@@ -21,7 +21,7 @@ const EventForm = () => {
       setT(""); // Reset Title
       setD(""); // Reset Date
       setDesc(""); // Reset Description
-   // setP(""); // Reset Category (if applicable)
+      setP(""); // Reset Category (if applicable)
     }
     else{
       alert("Failed");
@@ -39,13 +39,13 @@ const EventForm = () => {
       <input type="text" value={Title} placeholder="Event Title" onChange={(e)=>{setT(e.target.value)}} />
       <input type="date" value={Date}  onChange={(e)=>{setD(e.target.value)}} />
       <textarea value={Description} placeholder="Description" onChange={(e)=>{setDesc(e.target.value)}} ></textarea>
-      {/* <select onChange={(e)=>{setP(e.target.value)}}>
+      <select onChange={(e)=>{setP(e.target.value)}}>
         <option>Meeting</option>
         <option>Music</option>
         <option>Sports</option>
         <option>Festival</option>
         <option>Market</option>
-      </select> */}
+      </select>
       <button type="submit">Submit Event</button>
     </form>
   );
