@@ -16,12 +16,15 @@ const EventForm = () => {
       // Category:Category
   }).then(response=>{
     console.log(response.data);
-    if(response.data.isSignup)
+    if(response.data.isStored)
     {
-      alert("Success");
+      setT(""); // Reset Title
+      setD(""); // Reset Date
+      setDesc(""); // Reset Description
+   // setP(""); // Reset Category (if applicable)
     }
     else{
-      alert("Failed")
+      alert("Failed");
     }
   })
   .catch(err=>
@@ -33,9 +36,9 @@ const EventForm = () => {
   return (
     <form className="eform" onSubmit={handledetails}>
       <h1>Event Submisson</h1>
-      <input type="text" placeholder="Event Title" onChange={(e)=>{setT(e.target.value)}} />
-      <input type="date"  onChange={(e)=>{setD(e.target.value)}} />
-      <textarea placeholder="Description" onChange={(e)=>{setDesc(e.target.value)}} ></textarea>
+      <input type="text" value={Title} placeholder="Event Title" onChange={(e)=>{setT(e.target.value)}} />
+      <input type="date" value={Date}  onChange={(e)=>{setD(e.target.value)}} />
+      <textarea value={Description} placeholder="Description" onChange={(e)=>{setDesc(e.target.value)}} ></textarea>
       {/* <select onChange={(e)=>{setP(e.target.value)}}>
         <option>Meeting</option>
         <option>Music</option>
@@ -48,4 +51,4 @@ const EventForm = () => {
   );
 };
 
-export default EventForm
+export default EventForm 
