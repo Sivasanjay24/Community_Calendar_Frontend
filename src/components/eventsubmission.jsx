@@ -9,7 +9,7 @@ const EventForm = () => {
   const handledetails = (event)=>
   {
     event.preventDefault();  
-    axios.post("https://community-calendar-backend.onrender.com",{
+    axios.post("https://community-calendar-backend.onrender.com/details",{
       Title:Title,
       Date:Date,
       Description:Description,
