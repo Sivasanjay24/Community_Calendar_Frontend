@@ -1,0 +1,51 @@
+.ah
+{
+  text-align: center;
+  color: aliceblue;
+}
+.ash{
+  color: aliceblue;
+}
+.ebox
+{
+  border:solid  2px rgb(12, 28, 42);
+  width:300px;
+  text-align: center;
+  padding:10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.ebox button
+{
+  margin:10px;
+  font-size: large;
+  padding:10px;
+  border:solid 1px aliceblue;
+  border-radius: 10px;
+}
+
+.rjbtn
+{
+  color: aliceblue;
+  background-color: rgb(242, 11, 11);
+}
+.acbtn
+{
+  color: aliceblue;
+  background-color: rgb(11, 242, 61);
+}
+
+.rjbtn:hover
+{
+  color: rgb(242, 11, 11);;
+  background-color: aliceblue;
+  border:solid 1px rgb(242, 11, 11)
+}
+
+.acbtn:hover
+{
+  color: rgb(11,242,61);;
+  background-color: aliceblue;
+  border:solid 1px rgb(11,242,61)
+}

@@ -9,9 +9,9 @@ const Navbar = () => {
     <div className='navbar'>
       <h1>Community Calendar</h1>
     <Link className="navcon" to='/'>Home</Link>
-    <div onClick={()=>showdd(!dd)} className="navcon">search</div>
+    <div onClick={()=>showdd(!dd)} className="navcon">Search</div>
     {/* <Link className="navcon" to='/events'>Events</Link> */}
-    <div className="navcon">Profile</div>
+    <Link className="navcon" to='/admin'>Admin</Link>
     {dd && <Search/>}
     </div>
     

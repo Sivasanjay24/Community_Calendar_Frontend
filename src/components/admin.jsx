@@ -1,3 +1,4 @@
+import '../css/admin.css'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -37,21 +38,22 @@ const AdminPanel = () => {
 
   return (
     <div>
-      <h1>Admin Panel</h1>
-      <h2>Pending Events</h2>
+      <h1 className='ah'>Admin Panel</h1>
+      <h2 className='ash'>Pending Events</h2>
       {pendingEvents.length === 0 ? (
         <p>No pending events.</p>
       ) : (
         <ul>
           {pendingEvents.map(event => (
-            <li key={event._id}>
-              <h3>{event.Title}</h3>
+            <p className='ebox' key={event._id}>
+              <h2>{event.Title}</h2>
+              <hr></hr>
               <p><strong>Date:</strong> {new Date(event.Date).toLocaleString()}</p>
               <p><strong>Description:</strong> {event.Description}</p>
               <p><strong>Category:</strong> {event.Category}</p>
-              <button onClick={() => handleApprove(event._id)}>Approve</button>
-              <button onClick={() => handleReject(event._id)}>Reject</button>
-            </li>
+              <button className='acbtn' onClick={() => handleApprove(event._id)}>Approve</button>
+              <button className='rjbtn' onClick={() => handleReject(event._id)}>Reject</button>
+            </p>
           ))}
         </ul>
       )}
