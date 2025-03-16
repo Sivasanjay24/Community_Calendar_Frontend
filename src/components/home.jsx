@@ -2,7 +2,6 @@ import '../css/home.css'
 import React from 'react'
 import Cal from './calender2'
 import { Link } from 'react-router-dom'
-import { Calendar } from '@fullcalendar/core/index.js'
 
 function home() {
   return (

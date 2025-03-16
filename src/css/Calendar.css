@@ -1,9 +1,9 @@
-/* Calendar container */
+
 .calendar-container {
   font-family: 'Arial, sans-serif';
-  max-width: 600px; /* Further reduce the maximum width */
+  max-width: 600px; 
   margin: 0 auto;
-  padding: 5px; /* Minimal padding */
+  padding: 5px; 
   margin-top: 10px;
   margin-bottom: 90px;
   background-color: #f9f9f9;
@@ -11,64 +11,64 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Calendar title */
+
 .calendar-title {
   text-align: center;
   color: #333;
-  margin-bottom: 5px; /* Minimal margin */
-  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 5px; 
+  font-size: 1.2rem; 
 }
 
 
-/* FullCalendar overrides */
+
 .fc {
-  font-size: 10px; /* Very small font size for the entire calendar */
+  font-size: 10px; 
 }
 
 .fc-header-toolbar {
-  margin-bottom: 5px; /* Minimal margin */
-  padding: 2px; /* Minimal padding */
+  margin-bottom: 5px; 
+  padding: 2px; 
 }
 
 .fc-header-toolbar button {
-  padding: 2px 4px; /* Minimal button padding */
-  font-size: 10px; /* Very small button font size */
+  padding: 2px 4px; 
+  font-size: 10px; 
 }
 
 .fc-daygrid-day {
-  padding: 1px; /* Minimal cell padding */
+  padding: 1px; 
 }
 
 .fc-daygrid-day-number {
-  font-size: 10px; /* Very small date number font size */
-  padding: 1px; /* Minimal padding */
+  font-size: 10px;
+  padding: 1px; 
 }
 
 .fc-col-header-cell {
-  padding: 2px; /* Minimal header padding */
-  font-size: 10px; /* Very small header font size */
+  padding: 2px; 
+  font-size: 10px; 
 }
 
 .fc-event {
-  font-size: 8px; /* Very small event font size */
-  padding: 1px; /* Minimal event padding */
-  margin: 1px; /* Minimal event margin */
+  font-size: 8px; 
+  padding: 1px; 
+  margin: 1px; 
 }
 
-/* Remove unnecessary borders and shadows */
+
 .fc-daygrid-day-frame {
   border: none;
 }
 
 .fc-daygrid-day-top {
-  justify-content: center; /* Center the date number */
+  justify-content: center; 
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   .calendar-container {
-    max-width: 100%; /* Allow full width on small screens */
-    padding: 2px; /* Minimal padding */
+    max-width: 100%; 
+    padding: 2px; 
   }
 
   .fc-header-toolbar {
@@ -77,10 +77,43 @@
   }
 
   .fc-header-toolbar button {
-    margin-top: 2px; /* Minimal button margin */
+    margin-top: 2px; 
   }
 }
 .inv
 {
   display:none;
+}
+
+.event-details-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 400px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.event-details-box h2 {
+  margin-top: 0;
+}
+
+.event-details-box button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #0d1831;
+  color: white;
+  border-radius: 10px;
+  border:none;
+  cursor: pointer;
+}
+
+.event-details-box button:hover {
+  background: #0056b3;
 }
