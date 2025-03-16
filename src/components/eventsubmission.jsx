@@ -18,10 +18,10 @@ const EventForm = () => {
     console.log(response.data);
     if(response.data.isStored)
     {
-      setT(""); // Reset Title
-      setD(""); // Reset Date
-      setDesc(""); // Reset Description
-      setP(""); // Reset Category (if applicable)
+      setT("");
+      setD(""); 
+      setDesc(""); 
+      setP(""); 
     }
     else{
       alert("Failed");
@@ -38,8 +38,8 @@ const EventForm = () => {
       <h1>Event Submisson</h1>
       <input type="text" value={Title} placeholder="Event Title" onChange={(e)=>{setT(e.target.value)}} />
       <input type="date" value={Date}  onChange={(e)=>{setD(e.target.value)}} />
-      <textarea value={Description} placeholder="Description" onChange={(e)=>{setDesc(e.target.value)}} ></textarea>
-      <select onChange={(e)=>{setP(e.target.value)}}>
+      <textarea value={Description} placeholder="Description" onChange={(e)=>{setDesc(e.target.value)}}/>
+      <select onChange={(e)=>{setP(e.target.value)}} placeholder="Select category">
         <option>Meeting</option>
         <option>Music</option>
         <option>Sports</option>
