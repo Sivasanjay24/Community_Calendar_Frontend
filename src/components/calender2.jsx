@@ -7,6 +7,7 @@ import '../css/Calendar.css';
 
 const CalendarPage = () => {
   const [events, setEvents] = useState([]);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -31,6 +32,9 @@ const CalendarPage = () => {
 
     fetchEvents();
   }, []);
+  const handleEventClick = (info) => {
+    setSelectedEvent(info.event);
+  };
 
   return (
     <div className="calendar-container">
@@ -38,8 +42,19 @@ const CalendarPage = () => {
         plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         selectable={true}
+        eventClick={handleEventClick}
         events={events}
       />
+      {selectedEvent && (
+         <div className="event-details-box">
+           <h2>{selectedEvent.title}</h2>
+           <hr></hr>
+           <p><strong>Date:</strong> {selectedEvent.start.toLocaleString()}</p>
+           <p><strong>Description:</strong> {selectedEvent.extendedProps.description}</p>
+           <p><strong>Category:</strong> {selectedEvent.extendedProps.category}</p>
+           <button onClick={() => setSelectedEvent(null)}>Close</button>
+         </div>
+       )}
     </div>
   );
 };
